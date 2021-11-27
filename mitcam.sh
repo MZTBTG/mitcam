@@ -17,7 +17,7 @@ then
   if [[ "$1" == c ]]
   then
     echo "Realizando dump do Stream da câmera alvo."
-    tshark -Y "ip.src == $2 && tcp.port == $3" -T fields -e data.data >$4 &>/dev/null
+    tshark -Y "ip.src == $2 && tcp.port == $3" -T fields -e data.data >./$4 
     echo "Dump realizado!"
   fi
   if [[ "$1" == d ]]
