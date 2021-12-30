@@ -7,9 +7,13 @@
 
 Instale as dependências para o ataque:
 `apt update`
+
 `apt install ettercap arpspoof wireshark ffmpeg`
+
 `git clone https://github.com/MZTBTG/mitcam.git`
+
 `cd mitcam`
+
 `chmod +x mitcam.sh`
 
 Utilizando uma ferramenta como `ettercap` ou `arpspoof`, realize um ataque MitM entre seus alvos:
